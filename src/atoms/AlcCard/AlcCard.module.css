@@ -1,0 +1,27 @@
+.frame {
+  @apply flex bg-[#262626] content-center;
+  border-radius: 12px;
+  padding: 4vw;
+}
+
+.imgArea {
+  @apply bg-orange-500;
+  height: 25vw;
+  width: 25vw;
+}
+
+.textArea {
+  @apply flex-1 flex flex-col gap-1;
+  @apply bg-slate-500 w-full;
+}
+
+.textArea > * {
+  @apply bg-slate-900;
+}
+
+/* 반응형에서 최대 너비 지정 */
+@media screen and (min-width: 574px) {
+  .frame {
+    padding: 24px;
+  }
+}
