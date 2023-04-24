@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./AlcCard.module.css";
-import sample from "../../assets/glass/martini1.png";
+import sample from "@/assets/glass/martini1.png";
 
 export default function AlcCard() {
   return (

@@ -1,0 +1,3 @@
+.frame {
+  @apply flex justify-between p-4 items-center;
+}

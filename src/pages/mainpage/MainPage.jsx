@@ -1,10 +1,12 @@
 import React from "react";
-import CategoryBoard from "../../molecules/category_board/CategoryBoard";
+import CategoryBoard from "@/components/molecules/category_board/CategoryBoard";
 import RandomPage from "../randompage/RandomPage";
+import BottomBar from "@/components/molecules/bottom_bar/BottomBar";
 
 export default function MainPage() {
   return (
     <div>
+      <BottomBar />
       <hr />
       <RandomPage />
       <hr />
