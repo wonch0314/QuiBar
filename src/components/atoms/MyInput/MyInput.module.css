@@ -1,0 +1,9 @@
+.frame {
+  @apply w-full bg-zinc-700 rounded-lg p-4;
+}
+
+.myInput {
+  @apply w-full bg-zinc-700;
+  @apply text-white text-xl;
+  @apply focus:outline-none;
+}
