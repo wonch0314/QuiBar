@@ -6,7 +6,7 @@
 
 /* 이미지 영역 */
 .imgArea {
-  @apply flex p-7;
+  @apply flex p-2;
   height: 25vw;
   width: 25vw;
 }
