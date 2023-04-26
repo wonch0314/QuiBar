@@ -1,5 +1,5 @@
 .frame {
-  @apply flex bg-[#262626] content-center;
+  @apply flex bg-[#262626] content-center my-5;
   border-radius: 12px;
   padding: 4vw;
 }

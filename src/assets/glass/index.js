@@ -1,12 +1,10 @@
-import footed_philsner from "./footed_philsner.png";
-import highball from "./highball.png";
-import hurricane from "./hurricane.png";
-import irish from "./irish.png";
-import margarita from "./margarita.png";
-import martini1 from "./martini1.png";
-import martini2 from "./martini2.png";
-import tall_highball from "./tall_highball.png";
-import wine1 from "./wine1.png";
-import wine2 from "./wine2.png";
-import wine3 from "./wine3.png";
-import wine4 from "./wine4.png";
+import shot from "./1샷글라스.png";
+import hurricane from "./2허리케인글라스.png";
+import long from "./3롱글라스.png";
+import rock from "./4온더락글라스.png";
+import handle from "./5손잡이.png";
+import martini from "./6마티니글라스.png";
+import magarita from "./7마가리타글라스.png";
+import coupe from "./8쿠페글라스.png";
+
+export { shot, hurricane, long, rock, handle, martini, magarita, coupe };

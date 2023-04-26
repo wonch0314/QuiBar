@@ -2,8 +2,12 @@ import React from "react";
 import { bartender } from "@/assets";
 import AlcCard from "@/components/atoms/AlcCard/AlcCard";
 import styles from "./RandomPage.module.css";
+import { useEffect } from "react";
 
 export default function RandomPage() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className={styles.frame}>
       <p>RandomPage</p>

@@ -1,0 +1,6 @@
+.board {
+  @apply bg-zinc-700 rounded-lg p-4 my-4 w-full;
+}
+
+@media screen and (min-width: 574px) {
+}
