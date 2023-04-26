@@ -1,33 +1,33 @@
-.logos {
+.frame {
   @apply flex flex-col content-center gap-9;
 }
-.logos > * {
+.frame > * {
   @apply text-center;
 }
 
 .name1 {
-  font-size: 10vw;
-  line-height: 100%;
-}
-
-.name2 {
   font-size: 14vw;
   line-height: 100%;
 }
 
+.name2 {
+  font-size: 16vw;
+  line-height: 100%;
+}
+
+.myImg {
+  @apply mx-[auto] my-6;
+  width: 18%;
+  height: auto;
+}
+
 .subtitle {
-  @apply text-sm text-gray-500;
+  @apply text-[5vw] text-gray-500;
 }
 
 .content {
   @apply text-left;
-  font-size: 7vw;
-}
-
-img {
-  margin: auto;
-  display: block;
-  width: 12vw;
+  font-size: 6vw;
 }
 
 .btn {
@@ -36,5 +36,37 @@ img {
 }
 
 .saying {
-  @apply text-gray-500 text-left text-sm;
+  @apply text-gray-500 text-left text-[4vw];
+}
+
+@media screen and (min-width: 574px) {
+  .name1 {
+    @apply text-[70px];
+  }
+
+  .name2 {
+    @apply text-[80px];
+  }
+
+  .myImg {
+    @apply mx-[auto] my-6;
+    width: 18%;
+    height: auto;
+  }
+
+  .subtitle {
+    @apply text-[25px];
+  }
+
+  .content {
+    @apply text-[30px];
+  }
+
+  .btn {
+    @apply text-[25px];
+  }
+
+  .saying {
+    @apply text-[20px];
+  }
 }

@@ -1,5 +1,5 @@
 .frame {
-  @apply flex bg-[#262626] content-center;
+  @apply flex bg-[#262626] content-center my-5;
   border-radius: 12px;
   padding: 4vw;
 }
@@ -7,30 +7,28 @@
 /* 이미지 영역 */
 .imgArea {
   @apply flex p-7;
-  @apply bg-orange-500;
   height: 25vw;
   width: 25vw;
 }
 
 .myImg {
-  @apply w-auto h-full;
+  @apply w-auto h-full m-auto;
 }
 
 /* 텍스트 영역 */
 .textArea {
   @apply flex-1 flex flex-col gap-1 justify-between;
-  @apply bg-slate-500 w-full p-5;
+  @apply w-full p-5 pr-1;
 }
 
 .textArea > * {
-  @apply bg-slate-900;
 }
 
 .name {
   @apply text-[6vw] font-bold;
 }
 .tag {
-  @apply text-[3vw] font-bold;
+  @apply text-[4vw] font-bold;
 }
 
 /* 반응형에서 최대 너비 지정 */
@@ -45,6 +43,6 @@
     @apply text-[34.44px] font-bold;
   }
   .tag {
-    @apply text-[17.22px] font-bold;
+    @apply text-[22.93px] font-bold;
   }
 }
