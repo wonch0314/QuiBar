@@ -1,13 +1,13 @@
 import React from "react";
 import styles from "./StartPage.module.css";
-import { martini } from "@/assets/glass/index.js";
+import { glassList } from "@/assets/glass/index.js";
 import { useNavigate } from "react-router-dom";
 
 const content = "퀴바를 여행하는 히치하이커들을 위한 안내서";
 
 export default function StartPage() {
   const navigate = useNavigate();
-
+  const num = Math.floor(Math.random() * 8) + 1;
   const enterBtn = () => {
     alert("환영합니다!");
     navigate("./main");
@@ -22,7 +22,7 @@ export default function StartPage() {
           <p className={styles.name2}>Qui</p>
         </div>
         {/* 글라스 이미지 */}
-        <img className={styles.myImg} src={martini} />
+        <img className={styles.myImg} src={glassList[num]} />
         {/* 서브 타이틀 & 설명 */}
         <span className={styles.subtitle}>Cocktail | Masitnun Anzu</span>
         <div className={styles.content}>{content}</div>

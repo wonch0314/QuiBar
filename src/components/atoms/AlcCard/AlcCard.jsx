@@ -1,16 +1,17 @@
 import React from "react";
 import styles from "./AlcCard.module.css";
-import sample from "@/assets/glass/martini1.png";
+import { glassList } from "@/assets/glass/index.js";
 
-export default function AlcCard() {
+export default function AlcCard({ data }) {
+  const { name, tag, glass } = data;
   return (
     <div className={styles.frame}>
       <div className={styles.imgArea}>
-        <img className={styles.myImg} src={sample} alt="" />
+        <img className={styles.myImg} src={glassList[glass]} alt={glass} />
       </div>
       <div className={styles.textArea}>
-        <p className={styles.name}>루시안 블랙</p>
-        <p className={styles.tag}>#달콤 # 쌀쌀</p>
+        <p className={styles.name}>{name}</p>
+        <p className={styles.tag}>{tag}</p>
       </div>
     </div>
   );

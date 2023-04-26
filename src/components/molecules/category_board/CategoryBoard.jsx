@@ -52,7 +52,7 @@ export default function CategoryBoard() {
         })}
       </div>
 
-      <CategoryCard name="extra" color="bg-[#FFFFFF]" />
+      <CategoryCard category="extra" name="extra" color="bg-[#FFFFFF]" />
     </>
   );
 }

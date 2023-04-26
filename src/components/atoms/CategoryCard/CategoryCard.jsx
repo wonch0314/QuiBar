@@ -8,9 +8,12 @@ export default function CategoryCard({ category, name, color, imgUrl }) {
   const navigate = useNavigate();
   const extra_name = ["이봐 술섞개", "늘 마시던걸로 한잔주게!"];
   const onCardClick = () => {
-    navigate("/cocktail", { state: { type: 0, data: category } });
+    if (category === "extra") {
+      navigate("/random");
+    } else {
+      navigate("/cocktail", { state: { type: 0, data: category } });
+    }
   };
-  console.log(imgUrl);
 
   return (
     <div className={styles.frame} onClick={onCardClick}>

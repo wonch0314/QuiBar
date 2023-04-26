@@ -7,4 +7,4 @@ import martini from "./6마티니글라스.png";
 import magarita from "./7마가리타글라스.png";
 import coupe from "./8쿠페글라스.png";
 
-export { shot, hurricane, long, rock, handle, martini, magarita, coupe };
+export const glassList = [0, shot, hurricane, long, rock, handle, martini, magarita, coupe];

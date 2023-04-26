@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 
 const alcOptions = {
   title: "알콜 도수",
-  options: ["도수 낮음", "도수 중간", "도수 높음"],
+  options: ["도수낮음", "도수중간", "도수높음"],
 };
 const tasteOptions = { title: "맛 옵션", options: ["새콤", "달콤", "쌉쌀", "짭짤"] };
 const subOptions = {
@@ -20,23 +20,18 @@ export default function TasteBoard() {
   const [sub, setSub] = useState([]);
   const navigate = useNavigate();
   const onClick = () => {
-    const data = { alc, taste, sub };
+    const data = [alcOptions.options[alc], ...taste, ...sub];
     navigate("/cocktail", { state: { type: 1, data } });
   };
 
   return (
-    <>
-      <p>
-        {alc} {taste} {sub}
-      </p>
-      <div className={styles.frame}>
-        <Slider data={alcOptions} handler={setAlc} value={alc} />
-        <Board data={tasteOptions} handler={setTaste} />
-        <Board data={subOptions} handler={setSub} />
-        <button className={styles.myBtn} onClick={onClick}>
-          검색
-        </button>
-      </div>
-    </>
+    <div className={styles.frame}>
+      <Slider data={alcOptions} handler={setAlc} value={alc} />
+      <Board data={tasteOptions} handler={setTaste} />
+      <Board data={subOptions} handler={setSub} />
+      <button className={styles.myBtn} onClick={onClick}>
+        검색
+      </button>
+    </div>
   );
 }
