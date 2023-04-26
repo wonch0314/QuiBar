@@ -1,0 +1,28 @@
+.logo {
+  @apply text-2xl font-bold;
+}
+
+.describe {
+  @apply text-4xl;
+}
+
+.btnFrame {
+  @apply grid grid-cols-2 w-2/3 gap-4;
+  @apply my-[36px];
+}
+
+.myBtn {
+  @apply rounded-3xl bg-zinc-700 p-2 text-xl;
+}
+
+.picked {
+  @apply bg-blue-500;
+}
+
+.selected {
+  @apply bg-blue-600;
+}
+
+.hide {
+  visibility: hidden;
+}

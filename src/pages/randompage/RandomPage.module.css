@@ -1,8 +1,11 @@
 .frame > p {
-  @apply text-center;
-  text-align: center;
+  @apply text-center mt-12;
 }
 
 .myImg {
-  @apply w-2/3 h-auto;
+  @apply w-2/3 h-auto m-auto mb-[50px];
+}
+
+.myBtn {
+  @apply w-[160px] bg-blue-500 p-3 px-3 font-bold rounded-lg text-3xl;
 }
