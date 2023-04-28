@@ -17,7 +17,7 @@ const data = {
   gin: ["진 베이스", "bg-[#7936AD]"],
   rum: ["럼 베이스", "bg-[#FD9B19]"],
   tequila: ["데킬라 베이스", "bg-[#FC3841]"],
-  whiskey: ["위스키 베이스", "bg-[#FFEA2E]"],
+  whisky: ["위스키 베이스", "bg-[#FFEA2E]"],
   brandy: ["브랜디 베이스", "bg-[#72FF50]"],
   liqueur: ["리큐르 베이스", "bg-[#118675]"],
   free: ["논 알코올", "bg-[#AFAFAF]"],
