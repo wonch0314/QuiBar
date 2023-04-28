@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { bartender } from "@/assets";
 import AlcCard from "@/components/atoms/AlcCard/AlcCard";
 import styles from "./RandomPage.module.css";
@@ -16,13 +16,12 @@ const getRandom = () => {
 };
 
 export default function RandomPage() {
+  const [alc, setAlc] = useState(getRandom());
   const navigate = useNavigate();
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
-  const alc = getRandom();
 
   return (
     <>
@@ -30,10 +29,13 @@ export default function RandomPage() {
         홈으로
       </button>
       <div className={styles.frame}>
-        <p className="text-[64px] mb-[50px]">듀근듀근 랜덤박스~</p>
+        <p className="text-[36px] mb-[50px]">듀근듀근 랜덤박스~</p>
         <img className={styles.myImg} src={bartender} />
-        <p className="text-[36px] mb-[50px]">손님, 주문하신 술입니다.</p>
+        <p className="text-[24px] mb-[50px]">손님, 주문하신 술입니다.</p>
         <AlcCard data={alc} />
+        <button className={styles.newOneBtn} onClick={() => setAlc(getRandom)}>
+          거 다른 술로 주쇼!
+        </button>
       </div>
     </>
   );

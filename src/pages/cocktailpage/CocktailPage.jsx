@@ -46,7 +46,7 @@ export default function CocktailPage() {
       <button className={styles.myBtn} onClick={() => navigate("/main")}>
         돌아가기
       </button>
-      <p className="my-[48px] text-4xl text-center text-blue-300">{top}</p>
+      <p className="my-[48px] text-3xl text-center text-blue-300">{top}</p>
       {alcList.map((alc, ind) => {
         return <AlcCard data={alc} key={ind} />;
       })}

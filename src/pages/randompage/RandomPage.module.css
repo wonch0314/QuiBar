@@ -7,5 +7,9 @@
 }
 
 .myBtn {
-  @apply w-[160px] bg-blue-500 p-3 px-3 font-bold rounded-lg text-3xl;
+  @apply w-[120px] bg-blue-500 p-3 px-3 font-bold rounded-lg text-xl;
+}
+
+.newOneBtn {
+  @apply text-center w-full bg-blue-500 p-3 text-xl rounded-md mb-[32px];
 }
