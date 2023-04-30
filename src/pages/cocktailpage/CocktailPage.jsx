@@ -6,19 +6,22 @@ import cocktail from "@/assets/cocktail_list.json";
 
 const getTaste = (taste) => {
   const retList = [];
+  const alc_option = taste.pop(0);
   Object.keys(cocktail).forEach((key) => {
     cocktail[`${key}`].forEach((alc) => {
       const { tag } = alc;
       let flag = 0;
-      taste.forEach((t) => {
-        if (tag.includes(t)) {
-          flag = 1;
-        }
-      });
+      if (tag.includes(alc_option)) {
+        taste.forEach((t) => {
+          if (tag.includes(t)) {
+            flag = 1;
+            return false;
+          }
+        });
+      }
       flag === 1 && retList.push(alc);
     });
   });
-  console.log(retList);
   return retList;
 };
 
@@ -50,6 +53,7 @@ export default function CocktailPage() {
       {alcList.map((alc, ind) => {
         return <AlcCard data={alc} key={ind} />;
       })}
+      {alcList.length === 0 && <p className={styles.empty}>다른 조건을 검색해주세요!</p>}
     </div>
   );
 }

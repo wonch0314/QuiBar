@@ -1,3 +1,7 @@
 .myBtn {
   @apply w-[120px] bg-blue-500 p-3 px-3 font-bold rounded-lg text-xl;
 }
+
+.empty {
+  @apply text-center text-3xl;
+}

@@ -20,7 +20,7 @@ export default function TasteBoard() {
   const [sub, setSub] = useState([]);
   const navigate = useNavigate();
   const onClick = () => {
-    const data = [alcOptions.options[alc], ...taste, ...sub];
+    const data = [...taste, ...sub, alcOptions.options[alc]];
     navigate("/cocktail", { state: { type: 1, data } });
   };
 
